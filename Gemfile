@@ -7,6 +7,7 @@ end
 
 ruby "2.4.1"
 
+gem 'cowsay'
 # Rails engine for https://github.com/CodeSeven/toastr
 gem 'toastr-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
