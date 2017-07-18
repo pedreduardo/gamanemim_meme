@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+Admin.find_by_email('gamanemim@gmail.com') || Admin.create(email: 'gamanemim@gmail.com', password: 'gamaexperience')
 
 Lead.all.each do |lead|
   full_name = lead.name.split(" ")
