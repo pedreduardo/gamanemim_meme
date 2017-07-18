@@ -44,7 +44,7 @@ body{
 .conteudo h2{
   color: #212121;
   font-weight: 900;
-  font-size: 4em;
+  font-size: 3em;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 1em;
 }
@@ -106,7 +106,6 @@ line-height: 2em;
 
 
 .formulario{
-  padding-top: 3em;
 }
 
 .caixa{
