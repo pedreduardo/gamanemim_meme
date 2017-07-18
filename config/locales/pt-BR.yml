@@ -4,3 +4,7 @@ activerecord:
       lead:
         name: Nome
         email: E-mail
+      profession:
+        title: Título
+        description: Descrição
+        image: Imagem
