@@ -23,11 +23,16 @@ class LeadsController < ApplicationController
   # POST /leads
   # POST /leads.json
   def create
+
+    offset = rand(Profession.count)
+    rand_record = Profession.offset(offset).first
+
     @lead = Lead.new(lead_params)
     @lead.ip = request.remote_ip
     Lead.exists?(email: @lead.email) ? return : @lead.save
     respond_to do |format|
       format.js
+      redirect_to profession_path(rand_record)
     end
   end
 

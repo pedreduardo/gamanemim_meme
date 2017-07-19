@@ -1,4 +1,33 @@
-<p id="notice"><%= notice %></p>
+<section class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+      <br>
+        <h2> Sua nova profissão é...</h2>
+      </div>
+    </div>
+  </div>
+</section>
 
-<%= link_to 'Edit', edit_profession_path(@profession) %> |
-<%= link_to 'Back', professions_path %>
+<section class="conteudo">
+<div class="row">
+  <div class="col-md-6">
+    <div class="post-img">
+      <img class="img-responsive" src="<%= @profession.image %>"/>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="post-txt">
+        <h2><%= @profession.title %></h2>
+        <p><%= @profession.description %></p>
+        <br>
+      <a class="btn btn-primary" href="javascript:fbShare('https://minhaprofissao.herokuapp.com/', 'Compartilhar', 'Compartilhar no Facebook', 'http://goo.gl/dS52U', 520, 350)">Compartilhe</a>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<p id="notice"><%= notice %></p>
+<a class="btn btn-primary" href="<%= root_path%>" style="color:white"> Voltar</a>

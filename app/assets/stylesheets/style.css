@@ -32,8 +32,15 @@ body{
 }
 .header{
 	background-color: #212121;
-	min-height:100px;
+	min-height:80px;
   height: auto;
+}
+
+.header h2{
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 3em;
+  font-family: 'Roboto', sans-serif;
 }
 
 .conteudo{
