@@ -48,6 +48,10 @@ body{
   padding: 3em;
 }
 
+.main{
+  padding: 6em;
+}
+
 .conteudo h2{
   color: #212121;
   font-weight: 900;
